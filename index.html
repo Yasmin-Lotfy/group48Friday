@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Components</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body data-bs-spy="scroll">
+    <!--  start of navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand h1" href="#">Reed Studio </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#slider">Slider</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tabs">Tabs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--  end of navbar -->
+    <!--  start of hero / home section  -->
+    <section id="home" class="d-flex align-items-center">
+      <div class="home-caption p-3 text-white ms-5 rounded-4">
+        <h1>SOPHIA REED</h1>
+        <p>UI/UX Designer & Front-End Developer</p>
+        <div class="social-icons d-flex gap-2">
+          <div class="icon d-flex justify-content-center align-items-center">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="icon d-flex justify-content-center align-items-center">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="icon d-flex justify-content-center align-items-center">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div class="icon d-flex justify-content-center align-items-center">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+        <a href="" class="text-uppercase fs-5 text-decoration-none mt-3 d-block"
+          >view portofolio</a
+        >
+      </div>
+    </section>
+    <!--  end of hero / home section  -->
+    <!--  start of modal -->
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Sophia Reed</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="./images/front.avif" class="w-100" alt="">
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+         
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  end of modal -->
+
+    <!--  start of about section  -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div
+          class="main-title position-relative d-flex justify-content-center align-items-center"
+        >
+          <h2 class="mb-0">About me</h2>
+          <h3 class="mb-0 position-absolute">About me</h3>
+        </div>
+        <p class="text-center my-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, natus?
+        </p>
+        <div class="row align-items-center">
+          <div class="col-md-4 main-flip-animation">
+            <div class="animate-3d">
+              <figure class="animate-card front">
+                <img
+                  src="./images/front.avif"
+                  class="w-100 h-100 object-fit-cover"
+                  alt=""
+                />
+              </figure>
+              <figure class="animate-card back">
+                <img
+                  src="./images/back.avif"
+                  class="w-100 h-100 object-fit-cover"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-7 offset-md-1">
+            <h2 class="demo" data-bs-toggle="modal" data-bs-target="#myModal">
+              Sophia Reed
+            </h2>
+            <p class="lead">Creative UI/UX Designer & Front-End Developer.</p>
+            <p class="text-secondary fs-5">
+              I'm a passionate designer and developer who loves turning ideas
+              into clean, modern digital experiences. With a sharp eye for
+              detail and a focus on user-centered design, I create interfaces
+              that are both beautiful and easy to use. When I'm not coding or
+              designing, you'll find me exploring new trends and finding fresh
+              inspiration for my next project.
+            </p>
+            <p>
+              <span class="fw-bolder">Email to </span>:
+              <a class="text-black" href="mailto:info@yourdomain.com"
+                >info@yourdomain.com</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  end of about section  -->
+
+    <!--  start of services section  -->
+    <section id="service" class="py-5">
+      <div class="container">
+        <div
+          class="main-title position-relative d-flex justify-content-center align-items-center"
+        >
+          <h2 class="mb-0 text-secondary">Service</h2>
+          <h3 class="mb-0 position-absolute text-white">Service</h3>
+        </div>
+
+        <div class="row mt-5 gy-5">
+          <div class="col-md-4">
+            <div
+              class="text-center ser-inner position-relative bg-white rounded-3 py-4 px-5"
+            >
+              <div
+                class="icon bg-dark text-white position-absolute top-0 start-50 translate-middle d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <h2 class="position-relative">BRANDING</h2>
+              <p class="mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, magni accusamus necessitatibus.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="text-center ser-inner position-relative bg-white rounded-3 py-4 px-5"
+            >
+              <div
+                class="icon bg-dark text-white position-absolute top-0 start-50 translate-middle d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <h2 class="position-relative">BRANDING</h2>
+              <p class="mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, magni accusamus necessitatibus.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="text-center ser-inner position-relative bg-white rounded-3 py-4 px-5"
+            >
+              <div
+                class="icon bg-dark text-white position-absolute top-0 start-50 translate-middle d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <h2 class="position-relative">BRANDING</h2>
+              <p class="mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, magni accusamus necessitatibus.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="text-center ser-inner position-relative bg-white rounded-3 py-4 px-5"
+            >
+              <div
+                class="icon bg-dark text-white position-absolute top-0 start-50 translate-middle d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <h2 class="position-relative">BRANDING</h2>
+              <p class="mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, magni accusamus necessitatibus.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="text-center ser-inner position-relative bg-white rounded-3 py-4 px-5"
+            >
+              <div
+                class="icon bg-dark text-white position-absolute top-0 start-50 translate-middle d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <h2 class="position-relative">BRANDING</h2>
+              <p class="mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, magni accusamus necessitatibus.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="text-center ser-inner position-relative bg-white rounded-3 py-4 px-5"
+            >
+              <div
+                class="icon bg-dark text-white position-absolute top-0 start-50 translate-middle d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <h2 class="position-relative">BRANDING</h2>
+              <p class="mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, magni accusamus necessitatibus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  end of services section  -->
+
+    <!--  start of slider section -->
+    <section id="slider" class="py-5">
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            >
+              <img
+                src="./images/pic1.avif"
+                class="w-100 rounded-circle"
+                alt=""
+              />
+            </button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            >
+              <img
+                src="./images/pic2.avif"
+                class="w-100 rounded-circle"
+                alt=""
+              />
+            </button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            >
+              <img
+                src="./images/pic3.avif"
+                class="w-100 rounded-circle"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="carousel-inner p-5">
+            <div class="carousel-item active">
+              <div
+                class="car-inner position-relative text-center p-4 border border-5 mx-auto w-75 border-black"
+              >
+                <div
+                  class="icon position-absolute top-0 start-50 translate-middle"
+                >
+                  <img
+                    src="./images/pic1.avif"
+                    class="w-100 rounded-circle"
+                    alt=""
+                  />
+                </div>
+                <h2>Ali</h2>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Vitae, incidunt. Corrupti error asperiores recusandae sapiente
+                  incidunt optio corporis commodi, similique repudiandae odio
+                  eaque quisquam quasi dignissimos maiores atque, mollitia
+                  possimus!
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="car-inner position-relative text-center p-4 border border-5 mx-auto w-75 border-black"
+              >
+                <div
+                  class="icon position-absolute top-0 start-50 translate-middle"
+                >
+                  <img
+                    src="./images/pic2.avif"
+                    class="w-100 rounded-circle"
+                    alt=""
+                  />
+                </div>
+                <h2>Mohamed</h2>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Vitae, incidunt. Corrupti error asperiores recusandae sapiente
+                  incidunt optio corporis commodi, similique repudiandae odio
+                  eaque quisquam quasi dignissimos maiores atque, mollitia
+                  possimus!
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="car-inner position-relative text-center p-4 border border-5 mx-auto w-75 border-black"
+              >
+                <div
+                  class="icon position-absolute top-0 start-50 translate-middle"
+                >
+                  <img
+                    src="./images/pic3.avif"
+                    class="w-100 rounded-circle"
+                    alt=""
+                  />
+                </div>
+                <h2>Ahmed</h2>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Vitae, incidunt. Corrupti error asperiores recusandae sapiente
+                  incidunt optio corporis commodi, similique repudiandae odio
+                  eaque quisquam quasi dignissimos maiores atque, mollitia
+                  possimus!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  end of slider section -->
+
+    <!--  start of tabs section -->
+    <section id="tabs" class="py-5">
+      <div class="container">
+        <ul
+          class="nav nav-tabs justify-content-center border-0"
+          id="myTab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link border-0 active"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#all-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="home-tab-pane"
+              aria-selected="true"
+            >
+              All
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link border-0"
+              id="profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#dev-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="profile-tab-pane"
+              aria-selected="false"
+            >
+              Dev
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link border-0"
+              id="contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#contact-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="contact-tab-pane"
+              aria-selected="false"
+            >
+              Contact
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="all-tab-pane"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+            tabindex="0"
+          >
+            <div class="row mt-3">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="./images/img1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body position-relative">
+                    <span
+                      class="badge position-absolute top-0 start-50 translate-middle text-bg-primary py-2 px-4"
+                      >Web Developer</span
+                    >
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card’s content.
+                    </p>
+                    <a href="#" class="btn btn-outline-primary w-100"
+                      >Go somewhere</a
+                    >
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center"
+                  >
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="icon">
+                        <img
+                          src="./images/pic1.avif"
+                          class="w-100 rounded-circle"
+                          alt=""
+                        />
+                      </div>
+                      <p class="mb-0">Ahmed</p>
+                    </div>
+                    <p class="mb-0">10 Mins</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="./images/img1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body position-relative">
+                    <span
+                      class="badge position-absolute top-0 start-50 translate-middle text-bg-primary py-2 px-4"
+                      >Web Developer</span
+                    >
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card’s content.
+                    </p>
+                    <a href="#" class="btn btn-outline-primary w-100"
+                      >Go somewhere</a
+                    >
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center"
+                  >
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="icon">
+                        <img
+                          src="./images/pic1.avif"
+                          class="w-100 rounded-circle"
+                          alt=""
+                        />
+                      </div>
+                      <p class="mb-0">Ahmed</p>
+                    </div>
+                    <p class="mb-0">10 Mins</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="./images/img1.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body position-relative">
+                    <span
+                      class="badge position-absolute top-0 start-50 translate-middle text-bg-primary py-2 px-4"
+                      >Web Developer</span
+                    >
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card’s content.
+                    </p>
+                    <a href="#" class="btn btn-outline-primary w-100"
+                      >Go somewhere</a
+                    >
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center"
+                  >
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="icon">
+                        <img
+                          src="./images/pic1.avif"
+                          class="w-100 rounded-circle"
+                          alt=""
+                        />
+                      </div>
+                      <p class="mb-0">Ahmed</p>
+                    </div>
+                    <p class="mb-0">10 Mins</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="dev-tab-pane"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+            tabindex="0"
+          >
+            <div class="row mt-3">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="./images/img4.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body position-relative">
+                    <span
+                      class="badge position-absolute top-0 start-50 translate-middle text-bg-primary py-2 px-4"
+                      >Web Developer</span
+                    >
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card’s content.
+                    </p>
+                    <a href="#" class="btn btn-outline-primary w-100"
+                      >Go somewhere</a
+                    >
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center"
+                  >
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="icon">
+                        <img
+                          src="./images/pic1.avif"
+                          class="w-100 rounded-circle"
+                          alt=""
+                        />
+                      </div>
+                      <p class="mb-0">Ahmed</p>
+                    </div>
+                    <p class="mb-0">10 Mins</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="./images/img4.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body position-relative">
+                    <span
+                      class="badge position-absolute top-0 start-50 translate-middle text-bg-primary py-2 px-4"
+                      >Web Developer</span
+                    >
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card’s content.
+                    </p>
+                    <a href="#" class="btn btn-outline-primary w-100"
+                      >Go somewhere</a
+                    >
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center"
+                  >
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="icon">
+                        <img
+                          src="./images/pic1.avif"
+                          class="w-100 rounded-circle"
+                          alt=""
+                        />
+                      </div>
+                      <p class="mb-0">Ahmed</p>
+                    </div>
+                    <p class="mb-0">10 Mins</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="./images/img4.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body position-relative">
+                    <span
+                      class="badge position-absolute top-0 start-50 translate-middle text-bg-primary py-2 px-4"
+                      >Web Developer</span
+                    >
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card’s content.
+                    </p>
+                    <a href="#" class="btn btn-outline-primary w-100"
+                      >Go somewhere</a
+                    >
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center"
+                  >
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="icon">
+                        <img
+                          src="./images/pic1.avif"
+                          class="w-100 rounded-circle"
+                          alt=""
+                        />
+                      </div>
+                      <p class="mb-0">Ahmed</p>
+                    </div>
+                    <p class="mb-0">10 Mins</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="contact-tab-pane"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+            tabindex="0"
+          >
+            <div class="row mt-3">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="./images/img5.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body position-relative">
+                    <span
+                      class="badge position-absolute top-0 start-50 translate-middle text-bg-primary py-2 px-4"
+                      >Web Developer</span
+                    >
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card’s content.
+                    </p>
+                    <a href="#" class="btn btn-outline-primary w-100"
+                      >Go somewhere</a
+                    >
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center"
+                  >
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="icon">
+                        <img
+                          src="./images/pic1.avif"
+                          class="w-100 rounded-circle"
+                          alt=""
+                        />
+                      </div>
+                      <p class="mb-0">Ahmed</p>
+                    </div>
+                    <p class="mb-0">10 Mins</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="./images/img5.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body position-relative">
+                    <span
+                      class="badge position-absolute top-0 start-50 translate-middle text-bg-primary py-2 px-4"
+                      >Web Developer</span
+                    >
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card’s content.
+                    </p>
+                    <a href="#" class="btn btn-outline-primary w-100"
+                      >Go somewhere</a
+                    >
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center"
+                  >
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="icon">
+                        <img
+                          src="./images/pic1.avif"
+                          class="w-100 rounded-circle"
+                          alt=""
+                        />
+                      </div>
+                      <p class="mb-0">Ahmed</p>
+                    </div>
+                    <p class="mb-0">10 Mins</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="./images/img5.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body position-relative">
+                    <span
+                      class="badge position-absolute top-0 start-50 translate-middle text-bg-primary py-2 px-4"
+                      >Web Developer</span
+                    >
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card’s content.
+                    </p>
+                    <a href="#" class="btn btn-outline-primary w-100"
+                      >Go somewhere</a
+                    >
+                  </div>
+                  <div
+                    class="card-footer d-flex justify-content-between align-items-center"
+                  >
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="icon">
+                        <img
+                          src="./images/pic1.avif"
+                          class="w-100 rounded-circle"
+                          alt=""
+                        />
+                      </div>
+                      <p class="mb-0">Ahmed</p>
+                    </div>
+                    <p class="mb-0">10 Mins</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  end of tabs section -->
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptates
+      aliquid repellat ea delectus dolorum officiis exercitationem quos unde
+      sunt, debitis id fugiat aspernatur ut praesentium architecto libero.
+      Asperiores veritatis tempora quis nemo excepturi eaque illo beatae,
+      similique explicabo, officia aliquam! Delectus, cumque ipsam blanditiis
+      itaque et sint ratione dolore! Quos tenetur neque inventore obcaecati,
+      tempora sint qui officia facilis quaerat, architecto dolorum vitae saepe
+      est mollitia voluptatem quisquam eos impedit. Odit libero nisi, dolor
+      voluptates perspiciatis id aut quidem necessitatibus nesciunt harum
+      mollitia. Culpa accusantium eaque voluptas in at. Minus voluptates velit
+      commodi ut neque debitis magnam harum soluta ipsam eligendi esse a quasi
+      deleniti perspiciatis fugit quia eius laudantium temporibus inventore
+      consequatur, voluptatem est libero ea. Libero ipsa pariatur, explicabo
+      placeat quaerat obcaecati debitis aut atque minima, voluptatibus optio id.
+      Nostrum similique debitis voluptates! Dicta rem quis, ab a quod
+      dignissimos ducimus fugiat rerum delectus nihil obcaecati excepturi quia
+      ipsa incidunt doloribus eveniet soluta sunt reiciendis reprehenderit earum
+      magnam exercitationem cumque, alias debitis? Corporis, praesentium
+      excepturi repellendus ipsum, rerum ab quo est ea alias laboriosam
+      dignissimos doloribus fuga quasi in eos vero! Maxime natus nobis dolorem
+      earum et enim id delectus corrupti cum vitae neque quasi praesentium
+      consequatur facilis quae, laboriosam repellendus facere nemo architecto.
+      Blanditiis ratione odio et distinctio fugit quam impedit accusantium enim
+      vitae omnis officiis, reiciendis recusandae fugiat! Asperiores omnis
+      accusamus eligendi laboriosam voluptates ab dignissimos provident placeat
+      tempora. Non voluptas accusamus cum amet eos voluptatem natus alias sequi
+      veritatis accusantium fugit facere, totam adipisci cumque enim iste, illum
+      asperiores nam omnis sit aut? Soluta in inventore, sequi omnis at eligendi
+      quam consequuntur id veniam reiciendis sed vitae nobis ab est culpa
+      facilis eius aspernatur veritatis itaque sapiente harum. Delectus alias
+      inventore quos ducimus, illum earum qui eligendi magnam repellendus hic
+      reprehenderit rem quo ullam debitis voluptas mollitia pariatur! Cumque,
+      perspiciatis quasi. Doloribus eaque impedit adipisci! Animi repudiandae
+      velit, eveniet molestiae impedit vitae hic enim dolor repellat
+      reprehenderit illo repellendus libero dolorem est! Perspiciatis inventore
+      libero tempore ullam eos? Numquam ipsa quasi rem quae? Enim culpa quos
+      blanditiis quidem est rem sequi? Distinctio vero ipsa aut officia
+      accusamus sed autem, consequatur eius totam, non saepe error harum
+      molestias, fuga libero eligendi dolorem iusto temporibus fugit quae sint
+      maiores magni! Culpa atque, amet sunt quae, libero est architecto, sit
+      doloribus animi qui molestiae voluptas voluptatum pariatur fugiat
+      voluptates repellendus nam porro suscipit iure tempore ullam dolores?
+    </p>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
